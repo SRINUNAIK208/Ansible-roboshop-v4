@@ -22,7 +22,7 @@
   - name: create home direcory 
     ansible.builtin.file:
       path: /app 
-      state: direcory 
+      state: directory 
 
   - name: download the catalogue code 
     ansible.builtin.get_url:
