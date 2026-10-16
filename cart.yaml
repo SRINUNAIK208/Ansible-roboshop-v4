@@ -9,7 +9,7 @@
   - name: install nodejs 
     ansible.builtin.dnf:
       name: nodejs
-      start: present 
+      state: present 
   
   - name: create system user 
     ansible.builtin.user: 
@@ -22,7 +22,7 @@
   - name: create home direcory 
     ansible.builtin.file:
       path: /app 
-      state: direcory 
+      state: directory
 
   - name: download the cart code 
     ansible.builtin.get_url:
