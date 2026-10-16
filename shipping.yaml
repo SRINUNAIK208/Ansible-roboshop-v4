@@ -25,9 +25,9 @@
       url: https://roboshop-artifacts.s3.amazonaws.com/shipping-v3.zip
       dest: /tmp/shipping.zip 
 
-  - name: unzip the user code 
+  - name: unzip the shipping code 
     ansible.builtin.unarchive:
-      src: /tmp/user.zip 
+      src: /tmp/shipping.zip 
       dest: /app
       remote_src: yes 
   
